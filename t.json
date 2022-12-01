@@ -1,0 +1,323 @@
+[
+	{
+		"product": "Яйца",
+		"name": "Яйца С0 из Лавки",
+		"price": 59,
+		"category": "Все из лавки",
+		"count": "10 шт",
+		"active": false,
+		"id": "1",
+		"lavka": "lavka",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2888787/20c62f93-65da-406e-813f-4ab09481cd97/230x230-webp"
+	},
+	{
+		"product": "Яйца",
+		"name": "Яйца С1 из Лавки",
+		"price": 93,
+		"category": "Все из лавки",
+		"count": "10 шт",
+		"active": false,
+		"id": "2",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/4429d1e5-6422-48a4-8581-4bd8b579f323/464x464-webp"
+	},
+	{
+		"product": "Вода",
+		"name": "Вода минеральная",
+		"price": 80,
+		"category": "Все из лавки",
+		"count": "5 л",
+		"active": false,
+		"id": "3",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2998515/18e85815-9993-4287-8ac6-e529b45e713f/230x230-webp"
+	},
+	{
+		"product": "Вода",
+		"name": "Вода минеральная без газа",
+		"price": 40,
+		"category": "Все из лавки",
+		"count": "1 л",
+		"active": false,
+		"id": "4",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2783132/7739d8fb-6d9f-4916-bef1-d105bdf9641f/464x464-webp"
+	},
+	{
+		"product": "Вода",
+		"name": "Вода минеральная с газом",
+		"price": 40,
+		"category": "Все из лавки",
+		"count": "1 л",
+		"active": false,
+		"id": "5",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2750890/8b4950a6-cdc3-43aa-82f4-1ab8821d4b48/464x464-webp"
+	},
+	{
+		"product": "Молочные продукты",
+		"name": "Сметана 15%",
+		"price": 59,
+		"category": "Все из лавки",
+		"count": "250 г",
+		"active": false,
+		"id": "6",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2888787/00381af5-bda6-47d7-941c-612f81241c3c/464x464-webp"
+	},
+	{
+		"product": "Молочные продукты",
+		"name": "Сметана 25%",
+		"price": 69,
+		"category": "Все из лавки",
+		"count": "250 г",
+		"active": false,
+		"id": "7",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/ac016ae9-74ae-45e0-b318-26c4ee8e5e30/464x464-webp"
+	},
+	{
+		"product": "Молочные продукты",
+		"name": "Творог пластовой 4-6%",
+		"price": 90,
+		"category": "Все из лавки",
+		"count": "250 г",
+		"active": false,
+		"id": "8",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2791769/57d5ee2a-388f-4fd7-bb0e-910893e1ec32/464x464-webp"
+	},
+	{
+		"product": "Молочные продукты",
+		"name": "Творог пластовой клубничный",
+		"price": 104,
+		"category": "Все из лавки",
+		"count": "190 г",
+		"active": false,
+		"id": "9",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2783132/56972669-4314-49b6-b6e1-809f7ac14462/464x464-webp"
+	},
+	{
+		"product": "Сладкое и снеки",
+		"name": "Чипсы нори Из Лавки со вкусом кимчи",
+		"price": 45,
+		"category": "Новое",
+		"count": "50 г",
+		"active": false,
+		"id": "10",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/2fa6827f-ee87-49b9-ba00-3bcf35ff978b/464x464-webp"
+	},
+	{
+		"product": "Сладкое и снеки",
+		"name": "Чипсы нори Из Лавки в оливко­вом масле",
+		"price": 45,
+		"category": "Новое",
+		"count": "50 г",
+		"active": false,
+		"id": "11",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2888787/cc09a558-8fb5-4d0c-a374-9d75af9493e7/464x464-webp"
+	},
+	{
+		"product": "Замороженные десерты и выпечка",
+		"name": "Пирож­ное Медович­ки Из Лавки",
+		"price": 120,
+		"category": "Новое",
+		"count": "120 г",
+		"active": true,
+		"id": "12",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/88bea2a3-fdc5-406b-a09c-6fb053523f94/464x464-webp"
+	},
+	{
+		"product": "Замороженные десерты и выпечка",
+		"name": "Чизкейк Из Лавки Нью-Йорк",
+		"price": 80,
+		"category": "Новое",
+		"count": "70 г",
+		"active": false,
+		"id": "13",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/2d0eee52-c6f3-4e65-9c7c-ac2504cb21f4/464x464-webp"
+	},
+	{
+		"product": "Замороженные десерты и выпечка",
+		"name": "Чизкейк Из Лавки малина",
+		"price": 80,
+		"category": "Новое",
+		"count": "70 г",
+		"active": false,
+		"id": "14",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2750890/76e945c4-3acb-4383-ab08-d9a5f0a5b40a/464x464-webp"
+	},
+	{
+		"product": "Выбираем вместе",
+		"name": "Пирож­ное шоколад­ное Вупи Куки",
+		"price": 140,
+		"category": "Выбираем вместе",
+		"count": "97 г",
+		"active": true,
+		"id": "15",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2791769/25e1ce5f-d980-4296-9467-610911cb6b98/464x464-webp"
+	},
+	{
+		"product": "Выбираем вместе",
+		"name": "Сыр Бюш козий",
+		"price": 223,
+		"category": "Выбираем вместе",
+		"count": "110 г",
+		"active": false,
+		"id": "16",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2756334/bff715b8-ae72-41c4-bcc7-366d7619ef21/464x464-webp"
+	},
+	{
+		"product": "Закуски",
+		"name": "Фрика­дельки с бруснич­ным соусом",
+		"price": 209,
+		"category": "Горячий стритфуд",
+		"count": "205 г",
+		"active": true,
+		"id": "17",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2791769/6ff750f9-5e44-4d2d-b3af-b8d016167da2/464x464-webp"
+	},
+	{
+		"product": "Закуски",
+		"name": "Крылыш­ки BBQ",
+		"price": 309,
+		"category": "Горячий стритфуд",
+		"count": "305 г",
+		"active": false,
+		"id": "18",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/7b4e5343-268c-47f5-9ea2-8d5ac8e212f5/464x464-webp"
+	},
+	{
+		"product": "The Truffle",
+		"name": "Омлет с окоро­ком и трюфе­лем",
+		"price": 209,
+		"category": "Из ресторанов",
+		"count": "155 г",
+		"active": true,
+		"id": "19",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/7b4e5343-268c-47f5-9ea2-8d5ac8e212f5/464x464-webp"
+	},
+	{
+		"product": "The Truffle",
+		"name": "Салат с киноа цыплён­ком и трюфе­лем",
+		"price": 244,
+		"category": "Из ресторанов",
+		"count": "190 г",
+		"active": false,
+		"id": "20",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2888787/5593d250-7cdc-4fb3-a2b5-87fe0f3fb59b/464x464-webp"
+	},
+	{
+		"product": "Lao Lee",
+		"name": "Жареный спринг-ролл с мясом",
+		"price": 204,
+		"category": "Из ресторанов",
+		"count": "150 г",
+		"active": true,
+		"id": "21",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/6b673dbf-fdfb-406a-884d-f6cbf951ed24/464x464-webp"
+	},
+	{
+		"product": "Lao Lee",
+		"name": "Паровая булоч­ка с гриба­ми",
+		"price": 114,
+		"category": "Из ресторанов",
+		"count": "150 г",
+		"active": false,
+		"id": "22",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/d28b2673-ec89-4087-b5fa-7cbeb2d936f6/464x464-webp"
+	},
+	{
+		"product": "Помидоры",
+		"name": "Помидо­ры Бархат­ный мёд",
+		"price": 214,
+		"category": "Овощи, грибы, зелень",
+		"count": "350 г",
+		"active": true,
+		"id": "23",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2783132/fe7c7f53-d438-4029-9f1c-07766b8cf1e6/464x464-webp"
+	},
+	{
+		"product": "Помидоры",
+		"name": "Помидо­ры сливо­видные Flamenco",
+		"price": 104,
+		"category": "Овощи, грибы, зелень",
+		"count": "450 г",
+		"active": true,
+		"id": "24",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2888787/d8c3b6f3-8022-4e46-b74f-bcb3dda49391/464x464-webp"
+	},
+	{
+		"product": "Огурцы",
+		"name": "Огурцы колючие",
+		"price": 104,
+		"category": "Овощи, грибы, зелень",
+		"count": "600 г",
+		"active": false,
+		"id": "25",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2791769/0abf5f08-f6e4-45a8-9e9a-88f469747b59/464x464-webp"
+	},
+	{
+		"product": "Огурцы",
+		"name": "Огурцы корот­коплод­ные",
+		"price": 94,
+		"category": "Овощи, грибы, зелень",
+		"count": "450 г",
+		"active": false,
+		"id": "26",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2888787/b9f142c3-5517-4cc9-b94d-268af47e3396/464x464-webp"
+	},
+	{
+		"product": "Самый сезон",
+		"name": "Ананас",
+		"price": 260,
+		"category": "Фрукты и ягоды",
+		"count": "1 шт.",
+		"active": false,
+		"id": "27",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2750890/101b6fc8-4b7c-43cd-8b93-70e62a006d94/464x464-webp"
+	},
+	{
+		"product": "Самый сезон",
+		"name": "Хурма Свечка",
+		"price": 130,
+		"category": "Фрукты и ягоды",
+		"count": "500 г",
+		"active": true,
+		"id": "28",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2750890/f0b8e6e5-71f2-4404-8924-6a18da737b5c/464x464-webp"
+	},
+	{
+		"product": "Самый сезон",
+		"name": "Мандари­ны Марок­ко",
+		"price": 195,
+		"category": "Фрукты и ягоды",
+		"count": "1 кг",
+		"active": true,
+		"id": "29",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2888787/9d8688ac-7875-4fa7-9c09-9d1a1a39c630/464x464-webp"
+	},
+	{
+		"product": "Ягоды",
+		"name": "Голуби­ка Artfruit",
+		"price": 297,
+		"category": "Фрукты и ягоды",
+		"count": "250 г",
+		"active": true,
+		"id": "30",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2783132/1545515d-6c16-4e0b-aae9-635a349cd11d/464x464-webp"
+	},
+	{
+		"product": "Ягоды",
+		"name": "Ежеви­ка",
+		"price": 379,
+		"category": "Фрукты и ягоды",
+		"count": "125 г",
+		"active": true,
+		"id": "31",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2756334/bb3d78f9-dc75-4b74-bce1-6ebfab1dfc18/464x464-webp"
+	},
+	{
+		"product": "Ягоды",
+		"name": "Клубни­ка",
+		"price": 265,
+		"category": "Фрукты и ягоды",
+		"count": "250 г",
+		"active": true,
+		"id": "32",
+		"imageUrl": "https://yastatic.net/avatars/get-grocery-goods/2805921/25eb811e-b992-49fb-8163-4d8d13981763/464x464-webp"
+	}
+]

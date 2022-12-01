@@ -1,0 +1,40 @@
+.catalog {
+	border-radius: 0;
+	box-shadow: none;
+	left: auto;
+	margin-right: 48px;
+	opacity: 1;
+	padding: 8px 0 24px;
+	pointer-events: all;
+	position: sticky;
+	top: 80px;
+	transform: translateY(0);
+	width: var(--m1efiuqx-7);
+	z-index: auto;
+	max-width: 270px;
+	&__list {
+		.name {
+			font-weight: 700;
+			font-size: 20px;
+		}
+		ul {
+			display: block;
+			margin-top: 28px;
+			li {
+				.first__catalog {
+					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
+					button {
+						display: flex;
+						align-items: center;
+						text-align: left;
+					}
+				}
+				:hover {
+					color: grey;
+				}
+			}
+		}
+	}
+}

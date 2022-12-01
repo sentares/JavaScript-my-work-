@@ -1,0 +1,190 @@
+@import '../variables';
+@import './lent_blogs_el';
+.ribbon {
+	// главные события
+	&__main_elements {
+		max-width: 880px;
+		width: 100%;
+		margin-top: 15px;
+		.first__block {
+			grid-template-columns: repeat(12, 1fr);
+			column-gap: 8px;
+			display: grid;
+			row-gap: 8px;
+			.sale {
+				grid-column-start: span 8;
+				grid-row-start: span 4;
+				div {
+					width: 580;
+					height: 140;
+					button {
+						border: none;
+						position: relative;
+						border-radius: 28px;
+						padding: 50px;
+						width: 584px;
+						height: 288px;
+						background-image: url(https://yastatic.net/avatars/get-grocery-goods/2998515/b26a03997e204005b3f85f172a8ab735/1168x576-webp);
+						background-position: center;
+						background-size: cover;
+						p {
+							position: absolute;
+							top: 30px;
+							font-size: 38px;
+							color: white;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+			li {
+				grid-column-start: span 2;
+				grid-row-start: span 2;
+				div {
+					.cheese {
+						border: none;
+						position: relative;
+						border-radius: 28px;
+						padding: 50px;
+						height: 140px;
+						width: 140px;
+						background-image: url(https://yastatic.net/avatars/get-grocery-goods/2791769/8a3ddab07617489d925d1babfc472d41/280x280-webp);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						p {
+							text-align: left;
+							position: absolute;
+							top: 12px;
+							left: 15px;
+							font-size: 16px;
+							color: white;
+							font-weight: 700;
+						}
+					}
+					.tea {
+						border: none;
+						position: relative;
+						border-radius: 28px;
+						padding: 50px;
+						height: 140px;
+						width: 140px;
+						background-image: url(https://yastatic.net/avatars/get-grocery-goods/2783132/cbdc6b390ea64e9e90b3609382feafb0/280x280-webp);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						p {
+							text-align: left;
+							position: absolute;
+							top: 12px;
+							left: 15px;
+							font-size: 16px;
+							color: white;
+							font-weight: 700;
+						}
+					}
+					.cash {
+						border: none;
+						position: relative;
+						border-radius: 28px;
+						padding: 50px;
+						height: 140px;
+						width: 140px;
+						background-image: url(https://yastatic.net/avatars/get-grocery-goods/2998515/c69c654bb85c4b4d915f1b1243c13828/280x280-webp);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						p {
+							text-align: left;
+							position: absolute;
+							top: 12px;
+							left: 15px;
+							font-size: 16px;
+							color: white;
+							font-weight: 700;
+						}
+					}
+					.lunch {
+						border: none;
+						position: relative;
+						border-radius: 28px;
+						padding: 50px;
+						height: 140px;
+						width: 140px;
+						background-image: url(https://yastatic.net/avatars/get-grocery-goods/2783132/dc3736a9832943b4a2455364898c3797/280x280-webp);
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: cover;
+						p {
+							text-align: left;
+							position: absolute;
+							top: 12px;
+							left: 15px;
+							font-size: 16px;
+							color: white;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// кнопка скидки
+	&__button_sale {
+		margin: 24px 0;
+		width: 880px;
+		button {
+			background-color: $button-grey;
+			border-radius: 28px;
+			width: 100%;
+			div {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.first_block {
+					img {
+						width: 72px;
+						height: 72px;
+					}
+				}
+			}
+		}
+		:hover {
+			background-color: $active-button-grey;
+			border-radius: 28px;
+		}
+	}
+
+	// тебе понравится
+	&__youLike {
+		margin-top: 35px;
+		.mySwiper {
+			// width: 500px;
+			max-width: 880px;
+			width: 100%;
+			height: 400px;
+		}
+	}
+
+	// блоки ленты
+	&__lenta_blogs {
+		margin-top: 35px;
+	}
+
+	// рузультат поиска
+	.searchAnswer {
+		.nameOfSearch {
+			font-size: 24px;
+			margin-bottom: 15px;
+			font-weight: 600;
+			.nameOf {
+				color: #ffbf00;
+			}
+		}
+		.searchedProducts {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}

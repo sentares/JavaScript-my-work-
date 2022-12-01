@@ -1,0 +1,62 @@
+@import 'variables';
+@import './libs/normalize';
+@import 'components/all';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	position: relative;
+}
+
+svg {
+	cursor: pointer;
+}
+
+.wrapper {
+	width: calc(100vw - 100px);
+	height: 100%;
+	background-color: #fff;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.content {
+	padding: 15px 0;
+
+	&__title {
+		margin: 35px 0;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media all and (max-width: 768px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
+	}
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+
+	&--cart {
+		max-width: 820px;
+		margin: 90px auto;
+		.content__title {
+			margin: 0;
+		}
+	}
+}
