@@ -1,44 +1,46 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { ProductItems } from '../../../../components/productItems/productIems'
-import { useEffect } from 'react'
-import { useState } from 'react'
-import axios from 'axios'
+
 import { useSelector } from 'react-redux'
-import { ItemsContext } from '../../../../App'
-// import items from '../ribbons/t.json'
 
 export const AllLavkaRibbon = () => {
-	const { items, setItems } = useContext(ItemsContext)
+	const productArray = useSelector(state => state.productSlice.productArray)
 
-	const filterByCategory = items => {
-		if (items.category === 'Все из лавки' && items.product === 'Яйца') {
-			return true
-		}
-		return false
-	}
-
-	const filter = items.filter(filterByCategory)
-
-	const filterByProduct = items => {
-		if (items.category === 'Все из лавки' && items.product === 'Вода') {
-			return true
-		}
-		return false
-	}
-
-	const filterProduct = items.filter(filterByProduct)
-
-	const filterByProductMilk = items => {
+	const filterByCategory = productArray => {
 		if (
-			items.category === 'Все из лавки' &&
-			items.product === 'Молочные продукты'
+			productArray.category === 'Все из лавки' &&
+			productArray.product === 'Яйца'
 		) {
 			return true
 		}
 		return false
 	}
 
-	const filterMilk = items.filter(filterByProductMilk)
+	const filter = productArray.filter(filterByCategory)
+
+	const filterByProduct = productArray => {
+		if (
+			productArray.category === 'Все из лавки' &&
+			productArray.product === 'Вода'
+		) {
+			return true
+		}
+		return false
+	}
+
+	const filterProduct = productArray.filter(filterByProduct)
+
+	const filterByProductMilk = productArray => {
+		if (
+			productArray.category === 'Все из лавки' &&
+			productArray.product === 'Молочные продукты'
+		) {
+			return true
+		}
+		return false
+	}
+
+	const filterMilk = productArray.filter(filterByProductMilk)
 
 	return (
 		<div>

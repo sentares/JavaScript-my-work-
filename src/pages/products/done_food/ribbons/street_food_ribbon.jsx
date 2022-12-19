@@ -1,23 +1,19 @@
-import React, { useContext } from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
-import axios from 'axios'
+import React from 'react'
+
 import { useSelector } from 'react-redux'
-import { ItemsContext } from '../../../../App'
 import { ProductItems } from '../../../../components/productItems/productIems'
-// import items from '../ribbons/t.json'
 
 export const SrteetFoodRibbon = () => {
-	const { items, setItems } = useContext(ItemsContext)
+	const productArray = useSelector(state => state.productSlice.productArray)
 
-	const fillterForRest = items => {
-		if (items.category === 'Горячий стритфуд') {
+	const fillterForRest = productArray => {
+		if (productArray.category === 'Горячий стритфуд') {
 			return true
 		}
 		return false
 	}
 
-	const filterNewRest = items.filter(fillterForRest)
+	const filterNewRest = productArray.filter(fillterForRest)
 
 	return (
 		<div>
