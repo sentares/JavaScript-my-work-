@@ -1,15 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { ISorting } from '../../../common/types/sorting'
+import { ISorting, Sort } from '../../../common/types/sorting'
 
 const initialState: ISorting = {
-	sorting: 'новое',
+	sorting: {
+		name: '',
+		sortingProperty: '',
+	},
 }
 
 const sortingSlice = createSlice({
 	name: 'sorting',
 	initialState,
 	reducers: {
-		setSorting(state, action: PayloadAction<string>) {
+		setSorting(state, action: PayloadAction<Sort>) {
 			state.sorting = action.payload
 		},
 	},

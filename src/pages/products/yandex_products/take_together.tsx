@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { FC } from 'react'
 import { AllLavkaCatalog } from './catalogs/all_lavka_catalog'
-import { NewLavkaRibbon } from './ribbons/new_ribbom'
+import { AllLavkaRibbon } from './ribbons/all_lavka_ribbon'
+import { TakeRibbon } from './ribbons/take_ribbon'
 
-export const NewLavka = () => {
+export const TakeTogether: FC = (): JSX.Element => {
 	return (
 		<div>
 			<div className='allLavka'>
@@ -13,18 +14,18 @@ export const NewLavka = () => {
 						<Link to='/' className=' text-slate-400'>
 							Главная /
 						</Link>
-						<Link to='/fromLavka' className=' text-slate-400'>
-							Новое
+						<Link to='/choseTogether' className=' text-slate-400'>
+							Выбираем вместе
 						</Link>
 					</nav>
 				</div>
-				<h1 className=' mt-6  text-6xl font-bold'>Новое</h1>
+				<h1 className=' mt-6  text-6xl font-bold'> Выбираем вместе</h1>
 				<div className='allLavka__lenta'>
 					<div className='productsCatalog'>
 						<AllLavkaCatalog />
 					</div>
 					<div className='productsRibbon'>
-						<NewLavkaRibbon />
+						<TakeRibbon />
 					</div>
 				</div>
 			</div>

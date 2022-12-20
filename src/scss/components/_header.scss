@@ -128,21 +128,77 @@
 		}
 	}
 
-	.sorting {
-		button {
-			padding: 14px 14px;
-			font-size: 16px;
-			cursor: pointer;
-			border-radius: 13px;
-			span {
-				.sorting__icon {
-					height: 20px;
-					width: 20px;
+	.Sort {
+		.sorting {
+			display: flex;
+			button {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				padding: 14px 14px;
+				font-size: 16px;
+				cursor: pointer;
+				border-radius: 13px;
+				span {
+					.sorting__icon {
+						height: 20px;
+						width: 20px;
+					}
 				}
 			}
+			:hover {
+				background-color: #ffdc32;
+			}
+			.active {
+				background-color: #ffdc32;
+			}
+			:active {
+				animation: bounce 1s;
+			}
 		}
-		:hover {
-			background-color: #efeeed;
+		:focus {
+			background-color: #ffdc32;
+			animation: bounce 1s;
+		}
+
+		@keyframes bounce {
+			100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			40% {
+				-webkit-transform: translateY(-5px);
+				transform: translateY(-5px);
+			}
+		}
+
+		.sort__popup {
+			position: absolute;
+			margin-top: 25px;
+			background: #ffffff;
+			box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.282);
+			border-radius: 10px;
+			overflow: hidden;
+			padding: 10px 15px;
+			font-size: 17px;
+			align-items: center;
+			cursor: pointer;
+			ul {
+				li {
+					margin: 5px 2px;
+					padding: 5px 5px;
+				}
+				:hover {
+					background-color: #efeeed;
+					border-radius: 5px;
+					animation: bounce 0.4s;
+				}
+			}
+			.active {
+				background-color: #ffdc32;
+				border-radius: 5px;
+			}
 		}
 	}
 

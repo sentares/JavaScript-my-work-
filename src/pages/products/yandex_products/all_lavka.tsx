@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { AllLavkaCatalog } from './catalogs/all_lavka_catalog'
 import { AllLavkaRibbon } from './ribbons/all_lavka_ribbon'
+import { FC } from 'react'
 
-export const AllLavka = () => {
+export const AllLavka: FC = (): JSX.Element => {
 	return (
 		<div>
 			<div className='allLavka'>
