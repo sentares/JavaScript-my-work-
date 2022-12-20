@@ -1,64 +1,17 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { FC } from 'react'
+import { YandexProducts } from './catalog-components/yandexProducts'
+import { DoneFoot } from './catalog-components/doneFood'
+import { Vegetables } from './catalog-components/vegetables'
 
-export const Catalog = () => {
-	const lavkaCatalog = ['Все из лавки', 'Новое', 'Выбираем вместе']
-	const [open, setOpen] = useState(false)
-
+export const Catalog: FC = (): JSX.Element => {
 	return (
 		<div className='catalog'>
 			<div className='catalog__list'>
 				<span className='name'>Каталог</span>
 				<ul>
-					<li className=' mt-3'>
-						<div className='first__catalog'>
-							<button
-								onClick={() => {
-									setOpen(!open)
-								}}
-							>
-								<img src='/assets/webp/40x40-webp.webp' alt='' />
-								<span className=' ml-2 font-medium	'>
-									Придумано Яндекс Лавкой
-								</span>
-							</button>
-						</div>
-					</li>
-					{open && (
-						<ul>
-							{lavkaCatalog.map(value => (
-								<li className=' mt-3 ml-11'>
-									<div className='first__catalog'>
-										<button>
-											<span className=' ml-2 font-medium	'>
-												<Link to='/fromLavka'>{value}</Link>
-											</span>
-										</button>
-									</div>
-								</li>
-							))}
-						</ul>
-					)}
-					<li className=' mt-3'>
-						<div className='first__catalog'>
-							<button>
-								<img src='/assets/webp/40x40-cake.webp' alt='' />
-								<span className=' ml-2 font-medium	'>
-									<Link to='/restaurant'>Готовая еда</Link>
-								</span>
-							</button>
-						</div>
-					</li>
-					<li className=' mt-3'>
-						<div className='first__catalog'>
-							<button>
-								<img src='/assets/webp/40x40-papper.webp' alt='' />
-								<span className=' ml-2 font-medium	'>
-									<Link to='/vagitables'>Овощной прилавок</Link>
-								</span>
-							</button>
-						</div>
-					</li>
+					<YandexProducts />
+					<DoneFoot />
+					<Vegetables />
 					<li className=' mt-3'>
 						<div className='first__catalog'>
 							<button>

@@ -1,6 +1,5 @@
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
-import { Header } from './components/header/header'
 import { Home } from './pages/home/home'
 import { Restaurant } from './pages/products/done_food/restaurant'
 import { SrteetFood } from './pages/products/done_food/srteetfood'
@@ -25,12 +24,12 @@ const App = () => {
 							<Route path='/' element={<PrivateRoute />}>
 								<Route path='/' element={<Home />} />
 								<Route path='/fromLavka' element={<AllLavka />} />
-								<Route path='/newFromLavka' element={<NewLavka />} />
-								<Route path='/choseTogether' element={<TakeTogether />} />
+								<Route path='/novinki' element={<NewLavka />} />
+								<Route path='/choose_together' element={<TakeTogether />} />
 								<Route path='/restaurant' element={<Restaurant />} />
 								<Route path='/streetFood' element={<SrteetFood />} />
 								<Route path='/fruits' element={<Fruits />} />
-								<Route path='/vagitables' element={<Vegitables />} />
+								<Route path='/vagetables' element={<Vegitables />} />
 							</Route>
 							<Route path='/login' element={<AuthRootComponent />} />
 							<Route path='/register' element={<AuthRootComponent />} />
