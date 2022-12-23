@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { DoneCatalog } from './catalogs/done_catatlog'
+import { Catalog } from '../../../components/catalog/catalog'
 import { SrteetFoodRibbon } from './ribbons/street_food_ribbon'
 
 export const SrteetFood = () => {
@@ -20,7 +20,7 @@ export const SrteetFood = () => {
 				<h1 className=' mt-6  text-6xl font-bold'> Горячий стритфуд</h1>
 				<div className='allLavka__lenta'>
 					<div className='productsCatalog'>
-						<DoneCatalog />
+						<Catalog />
 					</div>
 					<div className='productsRibbon'>
 						<SrteetFoodRibbon />

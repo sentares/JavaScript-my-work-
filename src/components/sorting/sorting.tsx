@@ -50,7 +50,7 @@ export const Sorting: FC = (): JSX.Element => {
 						className={sorting.name ? 'active' : ''}
 						onClick={() => setOpen(!open)}
 					>
-						{sorting.name}
+						{/* {sorting.name} */}
 						<span>
 							<BiSliderAlt className='sorting__icon' />
 						</span>

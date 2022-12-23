@@ -12,7 +12,11 @@ import { ToastContainer } from 'react-toastify'
 import './scss/app.scss'
 import { AuthRootComponent } from './components/auth/auth'
 import { LayoutComponent } from './components/layout/layout'
-import { PrivateRoute } from './utils/route/privateRoute'
+import { PrivateRoute } from './utils/routes/private/privateRoute'
+import { Shop } from './pages/shop/shop'
+import { Cart } from './pages/cart.tsx/cart'
+import { Checkout } from './pages/checkout/checkout'
+import { ProductDetails } from './pages/productDetails/productDetails'
 
 const App = () => {
 	return (
@@ -23,13 +27,10 @@ const App = () => {
 						<Routes>
 							<Route path='/' element={<PrivateRoute />}>
 								<Route path='/' element={<Home />} />
-								<Route path='/fromLavka' element={<AllLavka />} />
-								<Route path='/novinki' element={<NewLavka />} />
-								<Route path='/choose_together' element={<TakeTogether />} />
-								<Route path='/restaurant' element={<Restaurant />} />
-								<Route path='/streetFood' element={<SrteetFood />} />
-								<Route path='/fruits' element={<Fruits />} />
-								<Route path='/vagetables' element={<Vegitables />} />
+								<Route path='shop' element={<Shop />} />
+								<Route path='shop/:id' element={<ProductDetails />} />
+								<Route path='cart' element={<Cart />} />
+								<Route path='checkout' element={<Checkout />} />
 							</Route>
 							<Route path='/login' element={<AuthRootComponent />} />
 							<Route path='/register' element={<AuthRootComponent />} />

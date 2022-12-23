@@ -6,6 +6,9 @@ import { IoMdBasket } from 'react-icons/io'
 import { Search } from '../seacrh/search'
 import { FC } from 'react'
 import { Sorting } from '../sorting/sorting'
+import { Navigate } from 'react-router-dom'
+
+const navigate = Navigate
 
 export const Header: FC = (): JSX.Element => {
 	return (
@@ -34,12 +37,14 @@ export const Header: FC = (): JSX.Element => {
 			</div>
 
 			<div className='cart'>
-				<button>
-					<span>
-						<IoMdBasket className='cart__basket' />
-						Корзина
-					</span>
-				</button>
+				<Link to='/cart'>
+					<button>
+						<span>
+							<IoMdBasket className='cart__basket' />
+							Корзина
+						</span>
+					</button>
+				</Link>
 			</div>
 
 			<Sorting />

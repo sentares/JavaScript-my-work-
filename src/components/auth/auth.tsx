@@ -1,18 +1,19 @@
 import { FC, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { LoginPage } from './login/login'
-import { toast } from 'react-toastify'
 import { Register } from './register/register'
+import { toast } from 'react-toastify'
 import { instance } from '../../utils/axios/axios'
 import { useAppDispatch } from '../../utils/hooks/hooks'
 import { login } from '../../redux/slises/auth/authSlice'
+import { AppErrors } from '../../common/errors/errors'
 
 export const AuthRootComponent: FC = (): JSX.Element => {
 	const [email, setEmail] = useState('')
-	const [username, setUsername] = useState('')
 	const [password, setPassword] = useState('')
+	const [firstName, setFirstName] = useState('')
+	const [username, setUsername] = useState('')
 	const [repeatPassword, setRepeatPassword] = useState('')
-
 	const location = useLocation()
 	const navigate = useNavigate()
 	const dispatch = useAppDispatch()
@@ -21,28 +22,40 @@ export const AuthRootComponent: FC = (): JSX.Element => {
 		e.preventDefault()
 
 		if (location.pathname === '/login') {
+			if (email !== '' && password !== '') {
+				try {
+					const userData = {
+						email,
+						password,
+					}
+					const user = await instance.post('auth/login', userData)
+					await dispatch(login(user.data))
+					toast(`Welcome, ${user.data.user.firstName}`)
+					navigate('/')
+				} catch (error) {
+					toast.error('Неудалось 🥺')
+					throw new Error(AppErrors.PasswordDoNotMatch)
+				}
+			} else {
+				toast.error('Введите адрес электронной почты и пароль.')
+			}
+		} else {
+			if (repeatPassword !== password) return
 			try {
 				const userData = {
+					firstName,
+					username,
 					email,
 					password,
 				}
-				const user = await instance.post('auth/login', userData)
-				await dispatch(login(user.data))
-				toast(`Welcome, ${user.data.user.firstName}`)
+				const newUser = await instance.post('auth/register', userData)
+				await dispatch(login(newUser.data))
+				toast(`Welcome, ${newUser.data.user.firstName}`)
 				navigate('/')
 			} catch (error) {
-				toast.error('не удалось(')
+				toast.error('Неудалось 🥺')
 				return error
 			}
-		} else {
-			const newUser = {
-				username,
-				email,
-				password,
-				repeatPassword,
-			}
-			const user = await instance.post('auth/register', newUser)
-			console.log(user)
 		}
 	}
 

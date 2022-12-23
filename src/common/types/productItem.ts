@@ -3,4 +3,5 @@ export interface IProductItem {
 	price: number
 	count: number
 	imageUrl: string
+	id: string
 }

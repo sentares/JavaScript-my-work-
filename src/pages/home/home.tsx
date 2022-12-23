@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { Catalog } from '../../components/catalog/catalog'
 import { Ribbon } from '../../components/ribbon/ribbon'
 import { useEffect } from 'react'
@@ -12,7 +12,6 @@ import { selectSearch } from '../../redux/slises/search/selectors/searchSel'
 export const Home: FC = (): JSX.Element => {
 	const { productArray } = useSelector(selectProductArray)
 	const dispatch = useDispatch()
-
 	const { searchValue } = useSelector(selectSearch)
 
 	useEffect(() => {
